@@ -48,9 +48,13 @@
 </head>
 
     <body>
+        <!-- Background -->
         <canvas id="neural-network"></canvas>
 
+        <!-- Site -->
         <div class="site">
+
+            <!-- Header -->
             <header id="header">
                 <button id="menu-button" aria-label="Abrir menu">
                     <img src="assets/img/icons/menu-button.svg" alt="Menu">
@@ -66,10 +70,43 @@
                 </nav>
             </header>
 
+            <!-- Main -->
             <main>
                 <section id="hero">
-                    <div class="container">
+                    <div class="container hero-content">
+                        <span class="hero-tah">
+                            Software Engineer
+                        </span>
 
+                        <h1>Wellington Américo</h1>
+                        <h2>
+                            <span>Web</span>
+                            <span> • </span>
+                            <span>Backend</span>
+                            <span> • </span>
+                            <span>Data Automation</span>
+                            <span> • </span>
+                            <span>IoT</span>
+                        </h2>
+                        <p>
+                            Desenvolvendo aplicações inteligentes,
+                            automações e soluções escaláveis que unem
+                            software, dados e tecnologia.
+                        </p>
+
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn-primary">
+                                Ver Projetos
+                            </a>
+
+                            <a href="assets/files/" class="btn-secondary" download>
+                                Download CV
+                            </a>
+                        </div>
+
+                        <div class="scroll-indicator">
+                            <img src="assets/img/icons/mouse.svg" alt="Scroll">
+                        </div>
                     </div>
                 </section>
 
@@ -100,13 +137,12 @@
             </main>
         </div>
 
-        <script src="assets/js/effects/neural-network.js"></script>
-        <script src="assets/js/effects/glow.js"></script>
-        <script src="assets/js/effects/scroll.js"></script>
-
-        <script src="assets/js/components/header.js"></script>
-        <script src="assets/js/components/hero.js"></script>
-
+        <!-- Script -->
+        <script src="assets/js/neural-network.js"></script>
+        <script src="assets/js/glow.js"></script>
+        <script src="assets/js/scroll.js"></script>
+        <script src="assets/js/header.js"></script>
+        <script src="assets/js/hero.js"></script>
         <script src="assets/js/main.js"></script>
     </body>
 </html>
