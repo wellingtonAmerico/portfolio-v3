@@ -61,6 +61,21 @@ class Particle{
             this.vy *= -1;
         }
     }
+    attractToMouse(){
+        const dx = mouse.x - this.x;
+        const dy = mouse.y - this.y;
+
+        const distance = Math.sqrt(dx * dx + dy * dy);
+
+        const radius = 180;
+
+        if(distance < radius){
+            const force = (radius - distance) / radius;
+
+            this.x -= dx * force * 0.015;
+            this.y -= dy * force * 0.015;
+        }
+    }
 }
 
 /* Create Particles */
@@ -78,6 +93,7 @@ createParticles();
 function drawParticles(){
     particles.forEach((particle) => {
         particle.update();
+        particle.attractToMouse();
         particle.draw();
     })
 }
@@ -126,11 +142,22 @@ window.addEventListener("resize", () => {
     createParticles();
 });
 
-function animate(){
+function animateNeuralNetwork(){
     clearCanvas();
     drawConnections();
     drawParticles();
-    requestAnimationFrame(animate);
+    requestAnimationFrame(animateNeuralNetwork);
 }
 
-animate();
+/* Detect mouse */
+const mouse = {
+    x: window.innerWidth / 2,
+    y: window.innerHeight / 2
+};
+
+window.addEventListener("mousemove", (e) => {
+    mouse.x = e.clientX;
+    mouse.y = e.clientY;
+});
+
+animateNeuralNetwork();
