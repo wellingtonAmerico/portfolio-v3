@@ -1,3 +1,4 @@
+/* Hero Image */
 const heroImage = document.querySelector(".hero-image img");
 
 if(heroImage){
@@ -17,6 +18,7 @@ if(heroImage){
         mouseY=4;
     });
 
+/* Animation */
     function animateHero(){
         currentX += (mouseX-currentX)*0.08;
         currentY += (mouseY-currentY)*0.08;
@@ -31,3 +33,12 @@ if(heroImage){
     }
     animateHero();
 }
+
+/* Hero Reveal */
+const revealElements = document.querySelectorAll(".hero-reveal");
+
+revealElements.forEach((element, index) => {
+    setTimeout(() => {
+        element.classList.add("show");
+    }, 300 + index * 100);
+});

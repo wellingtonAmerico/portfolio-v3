@@ -1,3 +1,4 @@
+/* Header */
 #header{
     position: fixed;
     top: 0;
@@ -8,16 +9,17 @@
     pointer-events: none;
 }
 
+/* Menu button */
 #menu-button{
     width: 52px;
     height: 52px;
     margin-left: 14px;
     border-radius: 16px;
     background: rgba(18, 18, 18, .92);
-    border: 1px solid rgba(255, 255, 255, .08);
+    border: 1px solid var(--color-border);
     backdrop-filter: blur(10px);
     pointer-events: auto;
-    transition: .35s;
+    transition: var(--transition);
 }
 
 #menu-button:hover{
@@ -30,6 +32,7 @@
     margin: auto;
 }
 
+/* Site Menu */
 #side-menu{
     position: absolute;
     left: -260px;
@@ -41,7 +44,7 @@
     border-radius: 0 24px 24px 0;
     background: rgba(15, 15, 15, .92);
     backdrop-filter: blur(20px);
-    transition: .45s cubic-bezier(.2, .8, .2, 1);
+    transition: left .45s cubic-bezier(.2, .8, .2, 1);
 }
 
 #side-menu a{
@@ -55,6 +58,7 @@
     transform: translateX(8px);
 }
 
+/* States */
 #header.open #side-menu{
     left: 0;
 }

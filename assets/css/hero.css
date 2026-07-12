@@ -1,3 +1,4 @@
+*/* Hero */
 #hero{
     min-height: 100vh;
     display: flex;
@@ -5,6 +6,7 @@
     position: relative;
 }
 
+/* Layout */
 .hero-content{
     display: grid;
     grid-template-columns: 1.1fr .9fr;
@@ -12,14 +14,34 @@
     gap: 80px;
 }
 
+/* Reveal Animations */
+.hero-reveal{
+    opacity: 0;
+    transform: translateY(40px);
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+}
+
+.hero-reveal.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* Text */
 .hero-text{
     font-size: .95rem;
     font-weight: 600;
-    color: var(--color-primary);
-    text-transform: uppercase;
-    letter-spacing: 2px;
+}
+
+.hero-tag{
+    display: inline-block;
     margin-bottom: 18px;
+    color: var(--color-primary);
+    font-size: .9rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .hero-text h1{
@@ -140,7 +162,7 @@
         0 0 60px rgba(0, 200, 83, .18);
 }
 
-/* Scroll */
+/* Scroll indiator*/
 .scroll-indicator{
     position: absolute;
     bottom: 40px;
@@ -158,6 +180,7 @@
     width: 24px;
 }
 
+/* Animations */
 @keyframes heroGlow{
     0%{
         transform: scale(1);

@@ -33,9 +33,11 @@
     --font-text: "Inter", sans-serif;
     --font-code: "JetBrains Mono", monospace;
 
-    /* Sizes */
+    /* Layout */
     --container: 1280px;
     --header-height: 72px;
+
+    /* Border Radius */
     --radius-small: 8px;
     --radius-medium: 14px;
     --radius-large: 22px;

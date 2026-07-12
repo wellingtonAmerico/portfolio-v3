@@ -1,4 +1,4 @@
-/* Fundo Rede Neural*/
+/* Neural Netwrok background */
 #neural-network{
     position: fixed;
     inset: 0;
@@ -7,7 +7,7 @@
     z-index: -3;
 }
 
-/* Fundo Noise */
+/* Noise Layer */
 body::before{
     content: "";
     position: fixed;
@@ -18,7 +18,7 @@ body::before{
     z-index: -2;
 }
 
-/* Fundo Glow */
+/* Glow Layer */
 body::after{
     content: "";
     position: fixed;
@@ -28,14 +28,17 @@ body::after{
     top: -350px;
     transform: translateX(-50%);
     background:
-        radial-gradient(circle,
-        rgba(0,255,136,.08),
-        transparent 70%);
+        radial-gradient(
+            circle,
+            rgba(0,255,136,.08),
+            transparent 70%
+        );
     filter: blur(120px);
-    pointer-events:none;
+    pointer-events: none;
     z-index:-1;
 }
 
+/* Main Layout */
 main{
     width: 100%;
 }

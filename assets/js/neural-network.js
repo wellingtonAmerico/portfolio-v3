@@ -1,21 +1,35 @@
-/* Background */
+/* Canvas Background */
 const canvas = document.getElementById("neural-network");
 const ctx = canvas.getContext("2d");
 
-/* Canvas size */
 function resizeCanvas(){
     canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;;
+    canvas.height = window.innerHeight;
 }
-
-resizeCanvas();
 
 /* Config */
 const PARTICLE_COUNT = 120;
 const CONNECTION_DISTANCE = 170;
 const particles = [];
 
-/* Particle class */
+/* Mouse Interaction */
+const mouse = {
+    x: window.innerWidth / 2,
+    y: window.innerHeight / 2
+};
+
+/* Events */
+window.addEventListener("mousemove", (e) => {
+    mouse.x = e.clientX;
+    mouse.y = e.clientY;
+});
+
+window.addEventListener("resize", () => {
+    resizeCanvas();
+    createParticles();
+});
+
+/* Classe Particle */
 class Particle{
     constructor(){
         this.reset();
@@ -78,7 +92,7 @@ class Particle{
     }
 }
 
-/* Create Particles */
+/* Particles Functions */
 function createParticles(){
     particles.length = 0;
 
@@ -87,18 +101,14 @@ function createParticles(){
     }
 }
 
-createParticles();
-
-/* Particulas */
 function drawParticles(){
     particles.forEach((particle) => {
         particle.update();
         particle.attractToMouse();
         particle.draw();
-    })
+    });
 }
 
-/* Conexões */
 function drawConnections(){
     for(let i = 0; i < particles.length; i++){
         for(let j = i + 1; j < particles.length; j++){
@@ -137,11 +147,7 @@ function clearCanvas(){
     );
 }
 
-window.addEventListener("resize", () => {
-    resizeCanvas();
-    createParticles();
-});
-
+/* Animations */
 function animateNeuralNetwork(){
     clearCanvas();
     drawConnections();
@@ -149,15 +155,7 @@ function animateNeuralNetwork(){
     requestAnimationFrame(animateNeuralNetwork);
 }
 
-/* Detect mouse */
-const mouse = {
-    x: window.innerWidth / 2,
-    y: window.innerHeight / 2
-};
-
-window.addEventListener("mousemove", (e) => {
-    mouse.x = e.clientX;
-    mouse.y = e.clientY;
-});
-
+/* Start */
+resizeCanvas();
+createParticles();
 animateNeuralNetwork();
