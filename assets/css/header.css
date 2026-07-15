@@ -13,7 +13,7 @@
 #menu-button{
     width: 52px;
     height: 52px;
-    margin-left: 14px;
+    margin: 14px 0 0 14px;
     border-radius: 16px;
     background: rgba(18, 18, 18, .92);
     border: 1px solid var(--color-border);
@@ -50,7 +50,7 @@
 #side-menu a{
     color: var(--color-text);
     font-weight: 600;
-    transition: .25s;
+    transition: var(--transition-fast);
 }
 
 #side-menu a:hover{

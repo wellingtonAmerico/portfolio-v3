@@ -9,10 +9,10 @@
     --color-white: #FFFFFF;
     --color-text: #EAEAEA;
     --color-text-secondary: #B5B5B5;
-    --color-border: rgba(255,255,255,.08);
-    --color-glass: rgba(255,255,255,.04);
-    --color-glass-hover: rgba(255,255,255,.08);
-    --color-shadow: rgba(0,0,0,.45);
+    --color-border: rgba(255, 255, 255, .08);
+    --color-glass: rgba(255, 255, 255, .04);
+    --color-glass-hover: rgba(255, 255, 255, .08);
+    --color-shadow: rgba(0, 0, 0, .45);
 
     /* Gradients */
     --gradient-primary:

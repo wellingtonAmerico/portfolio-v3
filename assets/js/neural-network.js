@@ -1,4 +1,4 @@
-/* Canvas Background */
+/* Canvas */
 const canvas = document.getElementById("neural-network");
 const ctx = canvas.getContext("2d");
 
@@ -10,6 +10,8 @@ function resizeCanvas(){
 /* Config */
 const PARTICLE_COUNT = 120;
 const CONNECTION_DISTANCE = 170;
+const MOUSE_RADIUS = 180;
+const MOUSE_FORCE = 0.015;
 const particles = [];
 
 /* Mouse Interaction */
@@ -29,11 +31,12 @@ window.addEventListener("resize", () => {
     createParticles();
 });
 
-/* Classe Particle */
+/* Particle Class */
 class Particle{
     constructor(){
         this.reset();
     }
+
     reset(){
         this.x = Math.random() * canvas.width;
         this.y = Math.random() * canvas.height;
@@ -45,6 +48,7 @@ class Particle{
 
         this.opacity = 0.2 + Math.random() * 0.6;
     }
+
     draw(){
         ctx.beginPath();
 
@@ -64,6 +68,7 @@ class Particle{
 
         ctx.closePath();
     }
+
     update(){
         this.x += this.vx;
         this.y += this.vy;
@@ -75,24 +80,23 @@ class Particle{
             this.vy *= -1;
         }
     }
+
     attractToMouse(){
         const dx = mouse.x - this.x;
         const dy = mouse.y - this.y;
 
         const distance = Math.sqrt(dx * dx + dy * dy);
 
-        const radius = 180;
+        if(distance < MOUSE_RADIUS){
+            const force = (MOUSE_RADIUS - distance) / MOUSE_RADIUS;
 
-        if(distance < radius){
-            const force = (radius - distance) / radius;
-
-            this.x -= dx * force * 0.015;
-            this.y -= dy * force * 0.015;
+            this.x -= dx * force * MOUSE_FORCE;
+            this.y -= dy * force * MOUSE_FORCE;
         }
     }
 }
 
-/* Particles Functions */
+/* Particle Functions */
 function createParticles(){
     particles.length = 0;
 

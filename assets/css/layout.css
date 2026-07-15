@@ -1,4 +1,4 @@
-/* Neural Netwrok background */
+/* Neural Network Background */
 #neural-network{
     position: fixed;
     inset: 0;
@@ -30,7 +30,7 @@ body::after{
     background:
         radial-gradient(
             circle,
-            rgba(0,255,136,.08),
+            rgba(0, 255, 136, .08),
             transparent 70%
         );
     filter: blur(120px);
@@ -43,6 +43,7 @@ main{
     width: 100%;
 }
 
+/* Fullscreen Sections */
 section{
     min-height: 100vh;
 }

@@ -1,0 +1,126 @@
+/* Header */
+.section-header{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.section-tag{
+    display: inline-block;
+    margin-bottom: 16px;
+    color: var(--color-primary);
+    font-size: .9rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.section-header h2{
+    font-family: var(--font-title);
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    line-height: 1.1;
+}
+
+/* Content */
+.about-content{
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 90px;
+}
+
+/* Text */
+.about-text{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.about-text p{
+    color: var(--color-text-secondary);
+    font-size: 1.08rem;
+    line-height: 1.9;
+}
+
+/* Photo */
+.about-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.about-photo::before{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    border-radius: 40px;
+    background: 
+        radial-gradient(
+            circle,
+            rgba(0, 200, 83, .22),
+            rgba(0, 200, 83, .08),
+            transparent 72%
+        );
+        filter: blur(90px);
+        animation: glowPulse 5s ease-in-out infinite;
+        z-index: -1;
+}
+
+.about-photo img{
+    width: 100%;
+    max-width: 420px;
+    border-radius: 28px;
+    border: 1px solid rgba(255, 255, 255, .08);
+    background: rgba(255, 255, 255, .02);
+    backdrop-filter: blur(20px);
+    box-shadow: 
+        0 30px 80px rgba(0, 0, 0, .45),
+        0 0 35px rgba(0, 200, 83, .08);
+    transition: 
+        transform .45s ease,
+        box-shadow .45s ease;
+}
+
+.about-photo img:hover{
+    box-shadow:
+        0 45px 90px rgba(0, 0, 0, .5),
+        0 0 60px rgba(0, 200, 83, .18);
+}
+
+/* Stats */
+.about-stats{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+}
+
+.stat-card{
+    padding: 36px;
+    border-radius: 24px;
+    text-align: center;
+    background: rgba(255, 255, 255, .03);
+    border: 1px solid var(--color-border);
+    backdrop-filter: blur(18px);
+    transition: var(--transition);
+}
+
+.stat-card:hover{
+    transform: translateY(-8px);
+    border-color: var(--color-primary);
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, .35),
+        0 0 25px rgba(0, 200, 83, .15);
+}
+
+.stat-card h3{
+    font-family: var(--font-title);
+    font-size: 2.8rem;
+    color: var(--color-primary);
+    margin-bottom: 12px;
+}
+
+.stat-card p{
+    color: var(--color-text-secondary);
+}
