@@ -8,15 +8,15 @@ body{
     font-family: var(--font-text);
     background: var(--color-bg);
     color: var(--color-text);
-    overflow-x: hidden;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 /* Site */
 .site{
+    position: relative;
     width: 100%;
     min-height: 100vh;
-    position: relative;
     z-index: 2;
 }
 
@@ -32,7 +32,21 @@ a{
     text-decoration: none;
 }
 
-/* Text selection */
+/* Images */
+img{
+    display: block;
+    max-width: 100%;
+}
+
+/* Buttons */
+button{
+    font: inherit;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* Text Selection */
 ::selection{
     background: var(--color-primary);
     color: #000;

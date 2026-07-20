@@ -1,0 +1,45 @@
+/* Reveal Animation */
+
+.reveal{
+    opacity: 0;
+    transform: translateY(40px);
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+}
+
+.reveal.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Glow Pulse */
+
+@keyframes glowPulse{
+    0%{
+        transform: scale(1);
+        opacity: .55;
+    }
+
+    50%{
+        transform: scale(1.08);
+        opacity: .9;
+    }
+
+    100%{
+        transform: scale(1);
+        opacity: .55;
+    }
+}
+
+/* Cursor Blink */
+
+@keyframes blink{
+    0%, 45%{
+        opacity: 1;
+    }
+
+    50%{
+        opacity: 0;
+    }
+}

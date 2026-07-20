@@ -1,4 +1,4 @@
-/* Box model */
+/* Box Model */
 *,
 *::before,
 *::after{
@@ -10,12 +10,12 @@
 /* Forms */
 input,
 textarea,
-select{
+select,
+button{
     font: inherit;
-    outline: none;
 }
 
-/* Lists Styles */
+/* Lists */
 ul,
 ol{
     list-style: none;
@@ -24,4 +24,5 @@ ol{
 /* Tables */
 table{
     border-collapse: collapse;
+    border-spacing: 0;
 }

@@ -1,0 +1,27 @@
+/* Sections */
+section{
+    min-height: 100vh;
+    padding: var(--spacing-xl) 0;
+}
+
+/* Section Header */
+.section-header{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.section-tag{
+    display: inline-block;
+    margin-bottom: 16px;
+    color: var(--color-primary);
+    font-size: .9rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.section-header h2{
+    font-family: var(--font-title);
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    line-height: 1.1;
+}

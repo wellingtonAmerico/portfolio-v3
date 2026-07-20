@@ -1,19 +1,23 @@
-/* Header */
+/* Elements */
 const header = document.getElementById("header");
 
 /* Config */
 const OPEN_AREA = 30;
 const CLOSE_AREA = 260;
 
-/* Events */
-document.addEventListener("mousemove", handlerHeaderMenu);
+/* Start */
+if(header){
+    document.addEventListener("mousemove", handleHeaderMenu);
+}
 
 /* Functions */
-function handlerHeaderMenu(event){
-    if (event.clientX <= OPEN_AREA) {
+function handleHeaderMenu(event){
+
+    if(event.clientX <= OPEN_AREA){
         header.classList.add("open");
     }
-    else if (event.clientX >= CLOSE_AREA) {
+    else if(event.clientX >= CLOSE_AREA){
         header.classList.remove("open");
     }
+
 }
