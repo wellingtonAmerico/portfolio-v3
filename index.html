@@ -44,6 +44,11 @@
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/hero.css">
     <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/skills.css">
+    <link rel="stylesheet" href="assets/css/projects.css">
+    <link rel="stylesheet" href="assets/css/experience.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 
 </head>
@@ -58,7 +63,9 @@
             <!-- Header -->
             <header id="header">
                 <button id="menu-button" aria-label="Abrir menu">
-                    <img src="assets/img/icons/menu-button.svg" alt="Menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg>
                 </button>
 
                 <nav id="side-menu" aria-label="Menu Principal">
@@ -107,17 +114,19 @@
                             </div>
                         </div>
 
-                        <div class="hero-image tilt">
+                        <div class="hero-image">
                             <img
                                 src="assets/img/hero/bannerpro.png"
                                 alt="Banner Wellington"
-                                class="reveal"
+                                class="reveal tilt"
                             >
                         </div>
                     </div>
 
                     <div class="scroll-indicator reveal">
-                        <img src="assets/img/icons/mouse.svg" alt="Scroll">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon" viewBox="0 0 16 16">
+                            <path d="M3 5.188C3 2.341 5.22 0 8 0s5 2.342 5 5.188v5.625C13 13.658 10.78 16 8 16s-5-2.342-5-5.188V5.189zm4.5-4.155C5.541 1.289 4 3.035 4 5.188V5.5h3.5zm1 0V5.5H12v-.313c0-2.152-1.541-3.898-3.5-4.154M12 6.5H4v4.313C4 13.145 5.81 15 8 15s4-1.855 4-4.188z"/>
+                        </svg>
                     </div>
                 </section>
 
@@ -163,11 +172,11 @@
                             </div>
 
                             <!-- Photo -->
-                            <div class="about-photo reveal tilt">
+                            <div class="about-photo reveal">
                                 <img
                                     src="assets/img/profile/profile.png"
                                     alt="Foto de Wellington Américo"
-                                    class=""
+                                    class="tilt"
                                 >
                             </div>
                         </div>
@@ -201,6 +210,274 @@
                 <section id="skills">
                     <div class="container">
 
+                        <!-- Title -->
+                        <div class="section-header reveal">
+                            <span class="section-tag">
+                                Skills
+                            </span>
+
+                            <h2>
+                                Tecnologias que utilizo
+                            </h2>
+                        </div>
+
+                        <!-- Grid -->
+                        <div class="skills-grid">
+
+                            <!-- HTML -->
+                            <article
+                                class="skill-card reveal"
+                                style="--level:95%;"
+                            >
+                                <img
+                                    src="assets/img/icons/technologies/html.svg"
+                                    alt="HTML"
+                                >
+
+                                <h3>HTML</h3>
+
+                                <p>
+                                    Estrutura semântica para aplicações web.
+                                </p>
+
+                                <div class="skill-level">
+                                    <span></span>
+                                </div>
+                            </article>
+
+                            <!-- CSS -->
+                            <article
+                                class="skill-card reveal"
+                                style="--level:92%;"
+                            >
+                                <img
+                                    src="assets/img/icons/technologies/css.svg"
+                                    alt="CSS"
+                                >
+
+                                <h3>CSS</h3>
+
+                                <p>
+                                    Interfaces modernas, responsivas e acessíveis.
+                                </p>
+
+                                <div class="skill-level">
+                                    <span></span>
+                                </div>
+                            </article>
+
+                            <!-- JavaScript -->
+                            <article
+                                class="skill-card reveal"
+                                style="--level:90%;"
+                            >
+                                <img
+                                    src="assets/img/icons/technologies/javascript.svg"
+                                    alt="JavaScript"
+                                >
+
+                                <h3>JavaScript</h3>
+
+                                <p>
+                                    Interatividade e lógica para aplicações web.
+                                </p>
+
+                                <div class="skill-level">
+                                    <span></span>
+                                </div>
+                            </article>
+
+                            <!-- React -->
+                            <article
+                                class="skill-card reveal"
+                                style="--level:82%;"
+                            >
+                                <img
+                                    src="assets/img/icons/technologies/react.svg"
+                                    alt="React"
+                                >
+
+                                <h3>React</h3>
+
+                                <p>
+                                    Desenvolvimento de interfaces baseadas em componentes.
+                                </p>
+
+                                <div class="skill-level">
+                                    <span></span>
+                                </div>
+                            </article>
+
+                            <!-- Node -->
+                            <article
+                                class="skill-card reveal"
+                                style="--level:75%;"
+                            >
+                                <img
+                                    src="assets/img/icons/technologies/node.svg"
+                                    alt="Node.js"
+                                >
+
+                                <h3>Node.js</h3>
+
+                                <p>
+                                    APIs REST e aplicações back-end escaláveis.
+                                </p>
+
+                                <div class="skill-level">
+                                    <span></span>
+                                </div>
+                            </article>
+
+                            <!-- Python -->
+                            <article
+                                class="skill-card reveal"
+                                style="--level:88%;"
+                            >
+                                <img
+                                    src="assets/img/icons/technologies/python.svg"
+                                    alt="Python"
+                                >
+
+                                <h3>Python</h3>
+
+                                <p>
+                                    Automações, análise de dados e desenvolvimento back-end.
+                                </p>
+
+                                <div class="skill-level">
+                                    <span></span>
+                                </div>
+                            </article>
+
+                            <!-- MySQL -->
+                            <article
+                                class="skill-card reveal"
+                                style="--level:85%;"
+                            >
+                                <img
+                                    src="assets/img/icons/technologies/mysql.svg"
+                                    alt="MySQL"
+                                >
+
+                                <h3>MySQL</h3>
+
+                                <p>
+                                    Banco de dados relacional para aplicações web.
+                                </p>
+
+                                <div class="skill-level">
+                                    <span></span>
+                                </div>
+                            </article>
+
+                            <!-- PHP -->
+                            <article
+                                class="skill-card reveal"
+                                style="--level:78%;"
+                            >
+                                <img
+                                    src="assets/img/icons/technologies/php.svg"
+                                    alt="PHP"
+                                >
+
+                                <h3>PHP</h3>
+
+                                <p>
+                                    Desenvolvimento de aplicações web dinâmicas.
+                                </p>
+
+                                <div class="skill-level">
+                                    <span></span>
+                                </div>
+                            </article>
+
+                            <!-- Arduino -->
+                            <article
+                                class="skill-card reveal"
+                                style="--level:82%;"
+                            >
+                                <img
+                                    src="assets/img/icons/technologies/arduino.svg"
+                                    alt="Arduino"
+                                >
+
+                                <h3>Arduino</h3>
+
+                                <p>
+                                    Projetos embarcados e Internet das Coisas.
+                                </p>
+
+                                <div class="skill-level">
+                                    <span></span>
+                                </div>
+                            </article>
+
+                            <!-- PostgreSQL -->
+                            <article
+                                class="skill-card reveal"
+                                style="--level:72%;"
+                            >
+                                <img
+                                    src="assets/img/icons/technologies/postgresql.svg"
+                                    alt="PostgreSQL"
+                                >
+
+                                <h3>PostgreSQL</h3>
+
+                                <p>
+                                    Banco de dados relacional avançado e escalável.
+                                </p>
+
+                                <div class="skill-level">
+                                    <span></span>
+                                </div>
+                            </article>
+
+                            <!-- Git -->
+                            <article
+                                class="skill-card reveal"
+                                style="--level:88%;"
+                            >
+                                <img
+                                    src="assets/img/icons/technologies/git.svg"
+                                    alt="Git"
+                                >
+
+                                <h3>Git</h3>
+
+                                <p>
+                                    Versionamento de código e colaboração em projetos.
+                                </p>
+
+                                <div class="skill-level">
+                                    <span></span>
+                                </div>
+                            </article>
+
+                            <!-- Docker -->
+                            <article
+                                class="skill-card reveal"
+                                style="--level:68%;"
+                            >
+                                <img
+                                    src="assets/img/icons/technologies/docker.svg"
+                                    alt="Docker"
+                                >
+
+                                <h3>Docker</h3>
+
+                                <p>
+                                    Containerização e padronização de ambientes.
+                                </p>
+
+                                <div class="skill-level">
+                                    <span></span>
+                                </div>
+                            </article>
+
+                        </div>
+
                     </div>
                 </section>
 
@@ -208,13 +485,421 @@
                 <section id="projects">
                     <div class="container">
 
+                        <!-- Title -->
+                        <div class="section-header reveal">
+                            <span class="section-tag">
+                                Projetos
+                            </span>
+
+                            <h2>
+                                Alguns dos meus projetos
+                            </h2>
+                        </div>
+
+                        <!-- Slider -->
+                        <div class="projects-slider">
+
+                            <!-- Previous -->
+                            <button class="slider-btn prev" aria-label="Projeto anterior">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5"/>
+                                </svg>
+                            </button>
+
+                            <!-- Viewport -->
+                            <div class="projects-viewport">
+
+                                <!-- Track -->
+                                <div class="projects-track">
+
+                                    <!-- ========================= -->
+                                    <!-- Project 1 -->
+                                    <!-- ========================= -->
+
+                                    <article class="project-card reveal">
+                                        <img
+                                            src="assets/img/projects/growlink.png"
+                                            alt="Dashboard de Metas"
+                                        >
+
+                                        <div class="project-content">
+                                            <span class="project-category">
+                                                Power BI
+                                            </span>
+
+                                            <h3>
+                                                Dashboard de Metas
+                                            </h3>
+
+                                            <p>
+                                                Dashboard corporativo desenvolvido para acompanhamento de indicadores, metas e resultados utilizando Power BI, DAX e integração com bases corporativas.
+                                            </p>
+
+                                            <div class="project-technologies">
+                                                <span>Power BI</span>
+                                                <span>DAX</span>
+                                                <span>SQL</span>
+                                            </div>
+
+                                            <div class="project-links">
+                                                <a href="#">
+                                                    Ver Projeto
+                                                </a>
+
+                                                <a href="#">
+                                                    GitHub
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </article>
+
+                                    <!-- ========================= -->
+                                    <!-- Project 2 -->
+                                    <!-- ========================= -->
+
+                                    <article class="project-card reveal">
+                                        <img
+                                            src="assets/img/projects/cafe.png"
+                                            alt="Website Pizzaria"
+                                        >
+
+                                        <div class="project-content">
+                                            <span class="project-category">
+                                                Full Stack
+                                            </span>
+
+                                            <h3>
+                                                Website Pizzaria
+                                            </h3>
+
+                                            <p>
+                                                Website responsivo desenvolvido utilizando HTML, CSS e JavaScript com foco em experiência do usuário e design moderno.
+                                            </p>
+
+                                            <div class="project-technologies">
+                                                <span>HTML</span>
+                                                <span>CSS</span>
+                                                <span>JavaScript</span>
+                                            </div>
+
+                                            <div class="project-links">
+                                                <a href="#">
+                                                    Ver Projeto
+                                                </a>
+
+                                                <a href="#">
+                                                    GitHub
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </article>
+
+                                    <!-- ========================= -->
+                                    <!-- Project 3 -->
+                                    <!-- ========================= -->
+
+                                    <article class="project-card reveal">
+                                        <img
+                                            src="assets/img/projects/pizzaria.png"
+                                            alt="Estufa Inteligente"
+                                        >
+
+                                        <div class="project-content">
+                                            <span class="project-category">
+                                                IoT
+                                            </span>
+
+                                            <h3>
+                                                Estufa Inteligente
+                                            </h3>
+
+                                            <p>
+                                                Projeto de monitoramento de temperatura e umidade utilizando Arduino e sensores, desenvolvido como trabalho de conclusão de curso.
+                                            </p>
+
+                                            <div class="project-technologies">
+                                                <span>Arduino</span>
+                                                <span>C++</span>
+                                                <span>IoT</span>
+                                            </div>
+
+                                            <div class="project-links">
+                                                <a href="#">
+                                                    Ver Projeto
+                                                </a>
+
+                                                <a href="#">
+                                                    GitHub
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+
+                            <!-- Next -->
+                            <button class="slider-btn next" aria-label="Próximo projeto">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Pagination -->
+                        <div class="projects-pagination"></div>
                     </div>
+
                 </section>
 
                 <!-- Experience -->
                 <section id="experience">
                     <div class="container">
 
+                        <!-- Title -->
+                        <div class="section-header reveal">
+                            <span class="section-tag">
+                                Experience
+                            </span>
+
+                            <h2>
+                                Minha trajetória
+                            </h2>
+                        </div>
+
+                        <!-- Professional Experience -->
+                        <div class="timeline-section reveal">
+                            <h3 class="timeline-title">
+                                Experiência Profissional
+                            </h3>
+
+                            <div class="timeline">
+                                <div class="timeline-line"></div>
+
+                                <article class="timeline-item">
+
+                                    <div class="timeline-dot"></div>
+
+                                    <div class="timeline-card">
+                                        <span class="timeline-date">
+                                            Jan 2024 • Atual
+                                        </span>
+
+                                        <h4>
+                                            Analista de Sistemas de Gestão Jr.
+                                        </h4>
+
+                                        <h5>
+                                            Votorantim Cimentos
+                                        </h5>
+
+                                        <p>
+                                            Desenvolvimento e sustentação de soluções
+                                            corporativas utilizando Power BI, Power Automate,
+                                            SAP SuccessFactors, APIs e automações para apoio
+                                            à tomada de decisão estratégica.
+                                        </p>
+                                    </div>
+                                </article>
+
+                                <article class="timeline-item">
+                                    <div class="timeline-dot"></div>
+
+                                    <div class="timeline-card">
+                                        <span class="timeline-date">
+                                            Set 2022 • Jan 2024
+                                        </span>
+
+                                        <h4>
+                                            Estagiário em Sistemas de Gestão
+                                        </h4>
+
+                                        <h5>
+                                            Votorantim Cimentos
+                                        </h5>
+
+                                        <p>
+                                            Apoio ao desenvolvimento de dashboards,
+                                            manutenção de sistemas corporativos e melhoria
+                                            de processos internos.
+                                        </p>
+                                    </div>
+                                </article>
+
+                                <article class="timeline-item">
+                                    <div class="timeline-dot"></div>
+
+                                    <div class="timeline-card">
+                                        <span class="timeline-date">
+                                            Jun 2019 • Fev 2020
+                                        </span>
+
+                                        <h4>
+                                            Assistente de Prevenção à Fraudes
+                                        </h4>
+
+                                        <h5>
+                                            HS Prevent
+                                        </h5>
+
+                                        <p>
+                                            Análise documental e validação de dados
+                                            cadastrais para prevenção de fraudes,
+                                            desenvolvendo forte raciocínio analítico.
+                                        </p>
+                                    </div>
+                                </article>
+
+                                <article class="timeline-item">
+                                    <div class="timeline-dot"></div>
+
+                                    <div class="timeline-card">
+                                        <span class="timeline-date">
+                                            Jun 2013 • Jun 2016
+                                        </span>
+
+                                        <h4>
+                                            Auxiliar Administrativo
+                                        </h4>
+
+                                        <h5>
+                                            Academia da Força Aérea
+                                        </h5>
+
+                                        <p>
+                                            Controle administrativo, organização de
+                                            documentos e apoio às atividades operacionais
+                                            do setor.
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <!-- Education -->
+                        <div class="timeline-section reveal">
+                            <h3 class="timeline-title">
+                                Formação Acadêmica
+                            </h3>
+
+                            <div class="timeline">
+                                <div class="timeline-line"></div>
+
+                                <article class="timeline-item">
+                                    <div class="timeline-dot"></div>
+
+                                    <div class="timeline-card">
+                                        <span class="timeline-date">
+                                            2019 • 2023
+                                        </span>
+
+                                        <h4>
+                                            Engenharia da Computação
+                                        </h4>
+
+                                        <h5>
+                                            Universidade Paulista • UNIP
+                                        </h5>
+
+                                        <p>
+                                            Formação voltada ao desenvolvimento de software,
+                                            bancos de dados, eletrônica, sistemas embarcados
+                                            e Internet das Coisas.
+                                        </p>
+                                    </div>
+                                </article>
+
+                                <article class="timeline-item">
+                                    <div class="timeline-dot"></div>
+
+                                    <div class="timeline-card">
+                                        <span class="timeline-date">
+                                            2013 • 2016
+                                        </span>
+
+                                        <h4>
+                                            Técnico em Informática
+                                        </h4>
+
+                                        <h5>
+                                            ETEC de São Paulo
+                                        </h5>
+
+                                        <p>
+                                            Base sólida em programação, bancos de dados,
+                                            desenvolvimento web, redes e manutenção
+                                            de computadores.
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <!-- Certifications -->
+                        <div class="timeline-section reveal">
+                            <h3 class="timeline-title">
+                                Certificações
+                            </h3>
+
+                            <div class="timeline">
+                                <div class="timeline-line"></div>
+
+                                <article class="timeline-item">
+                                    <div class="timeline-dot"></div>
+
+                                    <div class="timeline-card">
+                                        <span class="timeline-date">
+                                            Udemy
+                                        </span>
+
+                                        <h4>
+                                            Desenvolvimento Web Completo
+                                        </h4>
+                                    </div>
+                                </article>
+
+                                <article class="timeline-item">
+                                    <div class="timeline-dot"></div>
+
+                                    <div class="timeline-card">
+                                        <span class="timeline-date">
+                                            Udemy
+                                        </span>
+
+                                        <h4>
+                                            Curso Completo de Power BI
+                                        </h4>
+                                    </div>
+                                </article>
+
+                                <article class="timeline-item">
+                                    <div class="timeline-dot"></div>
+
+                                    <div class="timeline-card">
+                                        <span class="timeline-date">
+                                            Fundação Bradesco
+                                        </span>
+
+                                        <h4>
+                                            Microsoft Excel 2016 - Avançado
+                                        </h4>
+                                    </div>
+                                </article>
+
+                                <article class="timeline-item">
+                                    <div class="timeline-dot"></div>
+
+                                    <div class="timeline-card">
+                                        <span class="timeline-date">
+                                            Fundação Bradesco
+                                        </span>
+
+                                        <h4>
+                                            Segurança em Tecnologia da Informação
+                                        </h4>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
@@ -222,10 +907,133 @@
                 <section id="contact">
                     <div class="container">
 
+                        <!-- Title -->
+                        <div class="section-header reveal">
+                            <span class="section-tag">
+                                Contact
+                            </span>
+
+                            <h2>Vamos construir algo incrível juntos</h2>
+                        </div>
+
+                        <!-- Contact Content -->
+                        <div class="contact-content">
+
+                            <!-- Left -->
+                            <div class="contact-info reveal">
+                                <h3>Estou disponível para novos desafios.</h3>
+
+                                <p>
+                                    Seja para desenvolver aplicações, automatizar processos,
+                                    criar dashboards ou simplesmente trocar ideias sobre
+                                    tecnologia, ficarei feliz em conversar.
+                                </p>
+
+                                <div class="contact-buttons">
+                                    <a href="mailto:seuemail@email.com" class="btn btn-primary">Enviar E-mail</a>
+
+                                    <a href="https://wa.me/551999941456" target="_blank" class="btn btn-secondary">WhatsApp</a>
+                                </div>
+                            </div>
+
+                            <!-- Right -->
+                            <div class="contact-cards">
+                                <article class="contact-card reveal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon" viewBox="0 0 16 16">
+                                        <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"/>
+                                        <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+                                    </svg>
+
+                                    <h4>Email</h4>
+
+                                    <p>wellingtonamerico@hotmail.com</p>
+                                </article>
+
+                                <article class="contact-card reveal">
+                                    <img src="assets/img/icons/github-color.svg" alt="GitHub">
+                                    <h4>GitHub</h4>
+
+                                    <p>github.com/wellington-americo</p>
+                                </article>
+
+                                <article class="contact-card reveal">
+                                    <img src="assets/img/icons/linkedin-color.svg" alt="LinkedIn">
+
+                                    <h4>LinkedIn</h4>
+
+                                    <p>linkedin.com/in/wellington-americo</p>
+                                </article>
+
+                                <article class="contact-card reveal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon" viewBox="0 0 16 16">
+                                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                                    </svg>
+
+                                    <h4>Localização</h4>
+
+                                    <p>São Paulo • Brasil</p>
+                                </article>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </main>
         </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="container footer-content">
+
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <h3>
+                        Wellington Américo
+                    </h3>
+
+                    <p>
+                        Software Developer apaixonado por desenvolver soluções
+                        inteligentes, automações e experiências digitais modernas.
+                    </p>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="footer-nav" aria-label="Navegação do rodapé">
+                    <a href="#hero">Início</a>
+                    <a href="#about">Sobre</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projetos</a>
+                    <a href="#experience">Experiência</a>
+                    <a href="#contact">Contato</a>
+                </nav>
+
+                <!-- Social -->
+                <div class="footer-social">
+                    <a href="#" aria-label="GitHub">
+                        <img src="assets/img/icons/github-color.svg" alt="GitHub">
+                    </a>
+
+                    <a href="#" aria-label="LinkedIn">
+                        <img src="assets/img/icons/linkedin-color.svg" alt="LinkedIn">
+                    </a>
+
+                    <a href="#" aria-label="Email">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon" viewBox="0 0 16 16">
+                            <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"/>
+                            <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <p>
+                        © 2026 Wellington Américo.
+                        Todos os direitos reservados.
+                    </p>
+                </div>
+            </div>
+        </footer>
 
         <!-- Script -->
         <script src="assets/js/neural-network.js"></script>
@@ -233,7 +1041,6 @@
         <script src="assets/js/tilt.js"></script>
         <script src="assets/js/typewriter.js"></script>
         <script src="assets/js/scroll-reveal.js"></script>
-        <script src="assets/js/glow.js"></script>
-        <script src="assets/js/main.js"></script>
+        <script src="assets/js/projects.js"></script>
     </body>
 </html>

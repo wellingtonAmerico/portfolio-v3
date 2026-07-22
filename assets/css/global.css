@@ -32,6 +32,19 @@ a{
     text-decoration: none;
 }
 
+/* Icons */
+.icon{
+    display: block;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    fill: currentColor;
+    color: var(--color-text);
+    transition:
+        color var(--transition-fast),
+        transform var(--transition-fast);
+}
+
 /* Images */
 img{
     display: block;

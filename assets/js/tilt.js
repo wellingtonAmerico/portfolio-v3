@@ -10,15 +10,13 @@ const INITIAL_Y = 4;
 
 const SMOOTHING = 0.08;
 
-/* Mouse */
-const mouse = {
-    x: window.innerWidth / 2,
-    y: window.innerHeight / 2
-};
-
 /* State */
-let currentX = INITIAL_X;
-let currentY = INITIAL_Y;
+const tiltState = {
+    mouseX: window.innerWidth / 2,
+    mouseY: window.innerHeight / 2,
+    currentX: INITIAL_X,
+    currentY: INITIAL_Y
+};
 
 /* Start */
 if(tiltElements.length){
@@ -33,15 +31,15 @@ if(tiltElements.length){
 /* Events */
 function updateMousePosition(event){
 
-    mouse.x = event.clientX;
-    mouse.y = event.clientY;
+    tiltState.mouseX = event.clientX;
+    tiltState.mouseY = event.clientY;
 
 }
 
 function resetMousePosition(){
 
-    mouse.x = window.innerWidth / 2;
-    mouse.y = window.innerHeight / 2;
+    tiltState.mouseX = window.innerWidth / 2;
+    tiltState.mouseY = window.innerHeight / 2;
 
 }
 
@@ -49,22 +47,25 @@ function resetMousePosition(){
 function animateTilt(){
 
     const targetX =
-        ((mouse.x / window.innerWidth) - 0.5)
+        ((tiltState.mouseX / window.innerWidth) - 0.5)
         * MAX_ROTATE_Y;
 
     const targetY =
-        (0.5 - (mouse.y / window.innerHeight))
+        (0.5 - (tiltState.mouseY / window.innerHeight))
         * MAX_ROTATE_X;
 
-    currentX += (targetX - currentX) * SMOOTHING;
-    currentY += (targetY - currentY) * SMOOTHING;
+    tiltState.currentX +=
+        (targetX - tiltState.currentX) * SMOOTHING;
+
+    tiltState.currentY +=
+        (targetY - tiltState.currentY) * SMOOTHING;
 
     tiltElements.forEach((element) => {
 
         element.style.transform = `
             perspective(1800px)
-            rotateY(${currentX}deg)
-            rotateX(${currentY}deg)
+            rotateY(${tiltState.currentX}deg)
+            rotateX(${tiltState.currentY}deg)
         `;
 
     });
