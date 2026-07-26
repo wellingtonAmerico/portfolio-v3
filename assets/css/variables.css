@@ -55,4 +55,8 @@
     --transition-fast: .2s ease;
     --transition: .35s ease;
     --transition-slow: .6s ease;
+
+    /* Cursor */
+    --cursor-x:50%;
+    --cursor-y:50%;
 }

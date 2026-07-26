@@ -60,23 +60,31 @@
         <!-- Site -->
         <div class="site">
 
-            <!-- Header -->
-            <header id="header">
-                <button id="menu-button" aria-label="Abrir menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-                    </svg>
-                </button>
+        <!-- Header -->
+        <header id="header">
+            <button id="menu-button" aria-label="Abrir menu">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="icon"
+                    viewBox="0 0 16 16">
+                    <path
+                        fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+                <span>MENU</span>
+            </button>
 
-                <nav id="side-menu" aria-label="Menu Principal">
-                    <a href="#hero">Início</a>
-                    <a href="#about">Sobre</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#projects">Projetos</a>
-                    <a href="#experience">Experiência</a>
-                    <a href="#contact">Contato</a>
-                </nav>
-            </header>
+            <nav id="side-menu" aria-label="Menu Principal">
+                <div class="menu-links">
+                    <a class="nav-link" href="#hero">Início</a>
+                    <a class="nav-link" href="#about">Sobre</a>
+                    <a class="nav-link" href="#skills">Skills</a>
+                    <a class="nav-link" href="#projects">Projetos</a>
+                    <a class="nav-link" href="#experience">Experiência</a>
+                    <a class="nav-link" href="#contact">Contato</a>
+                </div>
+            </nav>
+        </header>
 
             <!-- Main -->
             <main>
@@ -184,22 +192,30 @@
                         <!-- Stats -->
                         <div class="about-stats">
                             <article class="stat-card reveal">
-                                <h3>10+</h3>
+                                <h3 class="stat-number" data-target="10" data-suffix="+">
+                                    0
+                                </h3>
                                 <p>Anos aprendendo tecnologia</p>
                             </article>
 
                             <article class="stat-card reveal">
-                                <h3>30+</h3>
+                                <h3 class="stat-number" data-target="30" data-suffix="+">
+                                    0
+                                </h3>
                                 <p>Projetos desenvolvidos</p>
                             </article>
 
                             <article class="stat-card reveal">
-                                <h3>15+</h3>
+                                <h3 class="stat-number" data-target="15" data-suffix="+">
+                                    0
+                                </h3>
                                 <p>Tecnologias utilizadas</p>
                             </article>
 
                             <article class="stat-card reveal">
-                                <h3>∞</h3>
+                                <h3 class="stat-number" data-target="8" data-suffix="∞" data-infinity="true">
+                                    ∞
+                                </h3>
                                 <p>Evolução contínua</p>
                             </article>
                         </div>
@@ -227,7 +243,7 @@
                             <!-- HTML -->
                             <article
                                 class="skill-card reveal"
-                                style="--level:95%;"
+                                style="--level:92%; --progress:0%;"
                             >
                                 <img
                                     src="assets/img/icons/technologies/html.svg"
@@ -248,7 +264,7 @@
                             <!-- CSS -->
                             <article
                                 class="skill-card reveal"
-                                style="--level:92%;"
+                                style="--level:92%; --progress:0%;"
                             >
                                 <img
                                     src="assets/img/icons/technologies/css.svg"
@@ -269,7 +285,7 @@
                             <!-- JavaScript -->
                             <article
                                 class="skill-card reveal"
-                                style="--level:90%;"
+                                style="--level:92%; --progress:0%;"
                             >
                                 <img
                                     src="assets/img/icons/technologies/javascript.svg"
@@ -290,7 +306,7 @@
                             <!-- React -->
                             <article
                                 class="skill-card reveal"
-                                style="--level:82%;"
+                                style="--level:92%; --progress:0%;"
                             >
                                 <img
                                     src="assets/img/icons/technologies/react.svg"
@@ -311,7 +327,7 @@
                             <!-- Node -->
                             <article
                                 class="skill-card reveal"
-                                style="--level:75%;"
+                                style="--level:92%; --progress:0%;"
                             >
                                 <img
                                     src="assets/img/icons/technologies/node.svg"
@@ -332,7 +348,7 @@
                             <!-- Python -->
                             <article
                                 class="skill-card reveal"
-                                style="--level:88%;"
+                                style="--level:92%; --progress:0%;"
                             >
                                 <img
                                     src="assets/img/icons/technologies/python.svg"
@@ -353,7 +369,7 @@
                             <!-- MySQL -->
                             <article
                                 class="skill-card reveal"
-                                style="--level:85%;"
+                                style="--level:92%; --progress:0%;"
                             >
                                 <img
                                     src="assets/img/icons/technologies/mysql.svg"
@@ -374,7 +390,7 @@
                             <!-- PHP -->
                             <article
                                 class="skill-card reveal"
-                                style="--level:78%;"
+                                style="--level:92%; --progress:0%;"
                             >
                                 <img
                                     src="assets/img/icons/technologies/php.svg"
@@ -395,7 +411,7 @@
                             <!-- Arduino -->
                             <article
                                 class="skill-card reveal"
-                                style="--level:82%;"
+                                style="--level:92%; --progress:0%;"
                             >
                                 <img
                                     src="assets/img/icons/technologies/arduino.svg"
@@ -416,7 +432,7 @@
                             <!-- PostgreSQL -->
                             <article
                                 class="skill-card reveal"
-                                style="--level:72%;"
+                                style="--level:92%; --progress:0%;"
                             >
                                 <img
                                     src="assets/img/icons/technologies/postgresql.svg"
@@ -437,7 +453,7 @@
                             <!-- Git -->
                             <article
                                 class="skill-card reveal"
-                                style="--level:88%;"
+                                style="--level:92%; --progress:0%;"
                             >
                                 <img
                                     src="assets/img/icons/technologies/git.svg"
@@ -458,7 +474,7 @@
                             <!-- Docker -->
                             <article
                                 class="skill-card reveal"
-                                style="--level:68%;"
+                                style="--level:92%; --progress:0%;"
                             >
                                 <img
                                     src="assets/img/icons/technologies/docker.svg"
@@ -909,7 +925,7 @@
                         <!-- Title -->
                         <div class="section-header reveal">
                             <span class="section-tag">
-                                Contact
+                                Contato
                             </span>
 
                             <h2>Vamos construir algo incrível juntos</h2>
@@ -1041,5 +1057,6 @@
         <script src="assets/js/typewriter.js"></script>
         <script src="assets/js/scroll-reveal.js"></script>
         <script src="assets/js/projects.js"></script>
+        <script src="assets/js/stats.js"></script>
     </body>
 </html>

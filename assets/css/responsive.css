@@ -245,3 +245,9 @@
         min-width: 250px;
     }
 }
+
+@media (hover: none){
+    #menu-button{
+        display:flex;
+    }
+}

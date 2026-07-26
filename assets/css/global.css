@@ -82,3 +82,46 @@ button{
 ::-webkit-scrollbar-thumb:hover{
     background: var(--color-primary-light);
 }
+
+/* Cursor Glow */
+body::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(
+            circle 220px at var(--cursor-x) var(--cursor-y),
+            rgba(0,255,136,.20),
+            rgba(0,255,136,.04) 40%,
+            transparent 75%
+        );
+    z-index: -1;
+    transition:
+        background .08s linear;
+}
+
+/* Card Spotlight */
+.card-glow{
+    position: relative;
+    overflow: hidden;
+}
+
+.card-glow::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+        radial-gradient(
+            260px circle at var(--mx,50%) var(--my,50%),
+            rgba(255,255,255,.08),
+            transparent 70%
+        );
+    opacity:0;
+    transition:opacity .35s ease;
+    pointer-events:none;
+}
+
+.card-glow:hover::before{
+    opacity:1;
+}

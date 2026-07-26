@@ -76,16 +76,12 @@
 
 .skill-level span{
     display: block;
-    width: var(--level);
+    width: var(--progress);
     height: 100%;
-
     background: var(--gradient-primary);
     border-radius: inherit;
-
-    box-shadow:
-        0 0 18px rgba(0,200,83,.45);
-
-    transition: width .8s ease;
+    box-shadow: 0 0 18px rgba(0,200,83,.45);
+    transition: width 1.2s cubic-bezier(.22,.61,.36,1);
 }
 
 /* Hover */

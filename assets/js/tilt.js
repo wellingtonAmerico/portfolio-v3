@@ -60,10 +60,14 @@ function animateTilt(){
     tiltState.currentY +=
         (targetY - tiltState.currentY) * SMOOTHING;
 
+    const floating =
+        Math.sin(performance.now() * 0.0012) * 6;
+
     tiltElements.forEach((element) => {
 
         element.style.transform = `
             perspective(1800px)
+            translate3d(0, ${floating}px, 0)
             rotateY(${tiltState.currentX}deg)
             rotateX(${tiltState.currentY}deg)
         `;
