@@ -33,25 +33,19 @@ function nextWord(){
 }
 
 function animateTypeWriter(){
-
     const word = words[wordIndex];
-
     updateText(word);
 
     if(isTyping){
-
         charIndex++;
-
         if(charIndex <= word.length){
             setTimeout(animateTypeWriter, TYPE_SPEED);
             return;
         }
-
         isTyping = false;
         setTimeout(animateTypeWriter, PAUSE_AFTER_TYPE);
         return;
     }
-
     charIndex--;
 
     if(charIndex >= 0){
@@ -61,7 +55,6 @@ function animateTypeWriter(){
 
     isTyping = true;
     nextWord();
-
     setTimeout(animateTypeWriter, PAUSE_AFTER_DELETE);
 }
 

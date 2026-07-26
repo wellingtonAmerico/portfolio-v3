@@ -13,16 +13,11 @@ revealElements.forEach((element) => {
 
 /* Functions */
 function handleReveal(entries, observer){
-
     entries.forEach((entry) => {
-
         if(!entry.isIntersecting){
             return;
         }
-
         entry.target.classList.add("show");
         observer.unobserve(entry.target);
-
     });
-
 }

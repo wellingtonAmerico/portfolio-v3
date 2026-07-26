@@ -20,32 +20,24 @@ const tiltState = {
 
 /* Start */
 if(tiltElements.length){
-
     window.addEventListener("mousemove", updateMousePosition);
     window.addEventListener("mouseleave", resetMousePosition);
-
     animateTilt();
-
 }
 
 /* Events */
 function updateMousePosition(event){
-
     tiltState.mouseX = event.clientX;
     tiltState.mouseY = event.clientY;
-
 }
 
 function resetMousePosition(){
-
     tiltState.mouseX = window.innerWidth / 2;
     tiltState.mouseY = window.innerHeight / 2;
-
 }
 
 /* Animation */
 function animateTilt(){
-
     const targetX =
         ((tiltState.mouseX / window.innerWidth) - 0.5)
         * MAX_ROTATE_Y;
@@ -64,16 +56,12 @@ function animateTilt(){
         Math.sin(performance.now() * 0.0012) * 6;
 
     tiltElements.forEach((element) => {
-
         element.style.transform = `
             perspective(1800px)
             translate3d(0, ${floating}px, 0)
             rotateY(${tiltState.currentX}deg)
             rotateX(${tiltState.currentY}deg)
         `;
-
     });
-
     requestAnimationFrame(animateTilt);
-
 }

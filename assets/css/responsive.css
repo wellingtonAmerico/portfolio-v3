@@ -1,5 +1,4 @@
 /* NOTEBOOKS */
-
 @media (max-width: 1200px){
     .container{
         width: min(100% - 40px, var(--container));
@@ -18,7 +17,6 @@
 
 
 /* TABLETS */
-
 @media (max-width: 992px){
     /* Sections */
     section{

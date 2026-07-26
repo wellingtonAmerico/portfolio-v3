@@ -97,8 +97,7 @@ body::before{
             transparent 75%
         );
     z-index: -1;
-    transition:
-        background .08s linear;
+    transition: background .08s linear;
 }
 
 /* Card Spotlight */
